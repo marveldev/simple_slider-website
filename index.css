@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.slider-content {
+  height: 700px;
+  display: none;
+}
+
+.current {
+  display: block;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  position: relative; 
+  bottom: 250px;
+  width: 40%;
+  height: auto;
+  padding: 5px 0px 5px 10px;
+  font-size: 15px;
+  word-spacing: 5px;
+  line-height: 25px; 
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.previous-button {
+  position: absolute;
+  top: 200px;
+  font-size: 40px; 
+  border: unset;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+}
+
+.next-button {
+  position: absolute;
+  right: 0px;
+  top: 200px;
+  font-size: 40px; 
+  border: unset;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+} 
+
+.previous-button:active, .next-button:active {
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    bottom: 180px;
+    width: 60%;
+    padding: 4px 0px 4px 8px;
+    font-size: 15px;
+    word-spacing: 2px;
+    line-height: 20px; 
+  }
+
+  .previous-button {
+    top: 150px;
+    font-size: 30px; 
+  }
+
+  .next-button {
+    top: 150px;
+    font-size: 30px; 
+  } 
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    bottom: 90px;
+    width: 80%;
+    padding: 4px 0px 4px 8px;
+    font-size: 8px;
+    line-height: 10px; 
+  }
+
+  .previous-button {
+    top: 90px;
+    font-size: 20px; 
+  }
+
+  .next-button {
+    top: 90px;
+    font-size: 20px; 
+  } 
+}
+
+@media screen and (max-width: 375px) {
+  .previous-button {
+    top: 70px;
+    font-size: 15px; 
+  }
+
+  .next-button {
+    top: 70px;
+    font-size: 15px; 
+  } 
+}
+
+@media screen and (max-width: 320px) {
+  .previous-button {
+    top: 50px;
+    font-size: 15px; 
+  }
+
+  .next-button {
+    top: 50px;
+    font-size: 15px; 
+  } 
+}

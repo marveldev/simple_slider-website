@@ -14,7 +14,8 @@ body {
 
 .image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .content {
@@ -26,95 +27,61 @@ body {
   font-size: 15px;
   word-spacing: 5px;
   line-height: 25px; 
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff80;
 }
 
 .previous-button {
   position: absolute;
-  top: 200px;
-  font-size: 40px; 
+  top: 300px;
   border: unset;
-  border-radius: 50px;
   outline: none;
   cursor: pointer;
+  background-color: transparent;
+}
+
+.icon {
+  font-size: 4em;
+  color: #ffffff80;
+}
+
+.previous-button:focus,
+.next-button:focus {
+  border: 1px solid black;
+  background-color: #acff2f34;
 }
 
 .next-button {
   position: absolute;
-  right: 0px;
-  top: 200px;
-  font-size: 40px; 
+  right: 0;
+  top: 300px;
   border: unset;
-  border-radius: 50px;
   outline: none;
   cursor: pointer;
-} 
+  background-color: transparent;
+}
 
-.previous-button:active, .next-button:active {
+.icon:active {
   transform: translateY(4px);
 }
 
 @media screen and (max-width: 768px) {
   .content {
-    bottom: 180px;
     width: 60%;
-    padding: 4px 0px 4px 8px;
+    padding: 4px 0 4px 8px;
     font-size: 15px;
     word-spacing: 2px;
     line-height: 20px; 
   }
-
-  .previous-button {
-    top: 150px;
-    font-size: 30px; 
-  }
-
-  .next-button {
-    top: 150px;
-    font-size: 30px; 
-  } 
 }
 
 @media screen and (max-width: 425px) {
   .content {
-    bottom: 90px;
-    width: 80%;
-    padding: 4px 0px 4px 8px;
-    font-size: 8px;
-    line-height: 10px; 
+    bottom: 20em;
   }
-
-  .previous-button {
-    top: 90px;
-    font-size: 20px; 
-  }
-
-  .next-button {
-    top: 90px;
-    font-size: 20px; 
-  } 
-}
+} 
 
 @media screen and (max-width: 375px) {
-  .previous-button {
-    top: 70px;
-    font-size: 15px; 
+  .content {
+    bottom: 22em;
   }
-
-  .next-button {
-    top: 70px;
-    font-size: 15px; 
-  } 
-}
-
-@media screen and (max-width: 320px) {
-  .previous-button {
-    top: 50px;
-    font-size: 15px; 
-  }
-
-  .next-button {
-    top: 50px;
-    font-size: 15px; 
-  } 
 }

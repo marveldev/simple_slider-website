@@ -20,7 +20,7 @@ function openPreviousSlide() {
   if (currentSlide.previousElementSibling) {
     currentSlide.previousElementSibling.classList.add('current');
   } else {
-    slides[slides.length -1].classList.add('current');
+    slides[slides.length - 1].classList.add('current');
   }
 }
 
